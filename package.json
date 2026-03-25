@@ -1,0 +1,28 @@
+{
+  "name": "fb-public-opinion-monitor",
+  "version": "1.1.0",
+  "description": "Facebook 群组舆情监控与分析（双语版）",
+  "scripts": {
+    "screenshot": "tsx scripts/fb_screenshot.ts",
+    "screenshot:full": "tsx scripts/fb_screenshot.ts --full-page",
+    "install-browser": "playwright install chromium",
+    "analyze": "python3 scripts/analyze_sentiment.py",
+    "analyze:file": "python3 scripts/analyze_sentiment.py --file",
+    "report": "python3 scripts/build_report.py --posts posts.json --output report.xlsx",
+    "report:auto": "python3 scripts/build_report.py --auto --output report.xlsx",
+    "cluster": "python3 scripts/cluster_posts.py",
+    "all": "python3 scripts/analyze_sentiment.py --file posts.json > analyzed.json && python3 scripts/build_report.py --posts analyzed.json --output report.xlsx"
+  },
+  "dependencies": {
+    "playwright": "^1.42.0",
+    "tsx": "^4.7.0",
+    "openpyxl": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
