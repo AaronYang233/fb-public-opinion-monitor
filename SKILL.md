@@ -18,7 +18,7 @@ description: >
 
 ## 前置条件
 
-**默认假设：** 用户已在浏览器登录 Facebook 且完成人机验证
+**默认假设：** 用户已在浏览器, 已安装OpenClaw Browser Relay, 登录 Facebook 且完成人机验证
 
 **异常处理：**
 - 若检测到未登录/登录失效 → 直接打开 `https://www.facebook.com`，提示用户手动登录
