@@ -1,7 +1,7 @@
 ---
 name: fb-public-opinion-monitor
 description: >
-  ⚠️ 执行前先读取本技能目录下的 SOUL.md，它定义了你的分析风格和输出格式。
+  执行前先读取本技能目录下的 SOUL.md，它定义了你的分析风格和输出格式。
   Facebook 群组舆情监控与分析技能。通过 Browser Relay 自动进入 FB 群组、抓取帖子、截图，
   执行情感分析、问题分类、聚类检测、预警标记，最终输出结构化 Excel 报告。
   
